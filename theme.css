@@ -1,12 +1,17 @@
 
+html {
+    background-color: #273348;
+}
 body {
     text-align: center;
     margin: 0;
     font-family: Arial;
+    min-width: 600px;
 }
 header {
-    background-color: rgb(53, 50, 58);
-    padding: 10px 0;
+    background-image: url(bg.png);
+    background-position: center;
+    padding: 100px 0;
     box-sizing: border-box;
     color: white;
 }
@@ -31,7 +36,7 @@ nav a:hover {
 main {
     background-color: rgb(37, 36, 39);
     color: white;
-    padding: 15px 0;
+    padding: 50px 0;
 }
 main h2 {
     margin: 0;
@@ -49,6 +54,22 @@ main .leftright div:first-child {
     margin-left: 0;
     margin-right: 80px;
 }
+main .center {
+    width: 60%;
+    max-width: 500px;
+    min-width: 320px;
+    margin: auto;
+}
+main .center table {
+    width: 50%;
+    margin: auto;
+}
+main .center table td {
+    text-align: left;
+}
+main .center table td:last-child {
+    text-align: right;
+}
 main ul {
     display: inline-block;
     text-align: center;
@@ -62,7 +83,7 @@ main article a {
     color: white;
 }
 footer {
-    margin-top: 100px;
+    /* margin-top: 100px; */
     background-color: black;
     padding: 15px;
 }
