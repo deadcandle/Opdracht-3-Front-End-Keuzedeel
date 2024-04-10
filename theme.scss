@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+html {
+    background-color: #273348;
+}
+body {
+    text-align: center;
+    margin: 0;
+    font-family: "Roboto Slab";
+    min-width: 600px;
+}
+header {
+    background-image: url(bg.png);
+    background-position: center;
+    padding: 100px 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+$light-background: white;
+$light-text: black;
+$dark-background: rgb(42, 40, 51);
+$dark-text: white;
+@mixin theme-colors($light-theme: true) {
+    @if $light-theme {
+        background-color: $light-background;
+        color: $light-text;
+    } @else {
+        background-color: $dark-background;
+        color: $dark-text;
+    }
+}
+
+nav {
+    @include theme-colors($light-theme: false);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+
+    a {
+        padding: 5px 15px;
+        text-decoration: none;
+        @include theme-colors($light-theme: false);
+    }
+    a:hover {
+        color: black;
+        background-color: white;
+    }
+}
+main {
+    background-color: rgb(37, 36, 39);
+    color: white;
+    padding: 50px 0;
+
+    h2 {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
+main {
+    .leftright {
+        display: flex;
+        margin: auto;
+        width: fit-content;
+    }
+    .leftright {
+        div {
+            margin-left: 80px;
+        }
+        div:first-child {
+            margin-left: 0;
+            margin-right: 80px;
+        }
+    }
+    .center {
+        width: 60%;
+        max-width: 500px;
+        min-width: 320px;
+        margin: auto;
+
+        table {
+            width: 50%;
+            margin: auto;
+
+            td {
+                text-align: left;
+            }
+            td:last-child {
+                text-align: right;
+            }
+        }
+    }
+    ul {
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        list-style-type: none;
+    }
+    article {
+        margin-top: 20px;
+
+        a {
+            color: white;
+        }
+    }
+}
+footer {
+    /* margin-top: 100px; */
+    background-color: black;
+    padding: 15px;
+
+    a {
+        color: white;
+    }
+}
