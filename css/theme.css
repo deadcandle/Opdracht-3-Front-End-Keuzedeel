@@ -1,13 +1,15 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 html {
-    background-color: #273348;
+  background-color: #273348;
 }
+
 body {
-    text-align: center;
-    margin: 0;
-    font-family: Arial;
-    min-width: 600px;
+  text-align: center;
+  margin: 0;
+  font-family: "Roboto Slab";
+  min-width: 600px;
 }
+
 header {
     background-image: url(../images/bg.png);
     background-position: center;
@@ -15,14 +17,16 @@ header {
     box-sizing: border-box;
     color: white;
 }
+
 nav {
-    background-color: rgb(42, 40, 51);
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: stretch;
-	align-content: stretch;
+  background-color: rgb(42, 40, 51);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
 }
 @media screen and  (max-width: 1600px) {
     nav a {
@@ -36,68 +40,73 @@ nav {
     }
 }
 nav a {
-    padding: 5px 15px;
-    text-decoration: none;
-    color: white;
+  padding: 5px 15px;
+  text-decoration: none;
+  background-color: rgb(42, 40, 51);
+  color: white;
 }
 nav a:hover {
-    color: black;
-    background-color: white;
+  color: black;
+  background-color: white;
 }
+
 main {
-    background-color: rgb(37, 36, 39);
-    color: white;
-    padding: 50px 0;
+  background-color: rgb(37, 36, 39);
+  color: white;
+  padding: 50px 0;
 }
 main h2 {
-    margin: 0;
-    margin-bottom: 20px;
+  margin: 0;
+  margin-bottom: 20px;
 }
+
 main .leftright {
-    display: flex;
-    margin: auto;
-    width: fit-content;
+  display: flex;
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 main .leftright div {
-    margin-left: 80px;
+  margin-left: 80px;
 }
 main .leftright div:first-child {
-    margin-left: 0;
-    margin-right: 80px;
+  margin-left: 0;
+  margin-right: 80px;
 }
 main .center {
-    width: 60%;
-    max-width: 500px;
-    min-width: 320px;
-    margin: auto;
+  width: 60%;
+  max-width: 500px;
+  min-width: 320px;
+  margin: auto;
 }
 main .center table {
-    width: 50%;
-    margin: auto;
+  width: 50%;
+  margin: auto;
 }
 main .center table td {
-    text-align: left;
+  text-align: left;
 }
 main .center table td:last-child {
-    text-align: right;
+  text-align: right;
 }
 main ul {
-    display: inline-block;
-    text-align: center;
-    padding: 0;
-    list-style-type: none;
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+  list-style-type: none;
 }
 main article {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 main article a {
-    color: white;
+  color: white;
 }
+
 footer {
-    /* margin-top: 100px; */
-    background-color: black;
-    padding: 15px;
+  /* margin-top: 100px; */
+  background-color: black;
+  padding: 15px;
 }
 footer a {
-    color: white;
-}
+  color: white;
+}/*# sourceMappingURL=theme.css.map */
