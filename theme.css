@@ -24,6 +24,17 @@ nav {
 	align-items: stretch;
 	align-content: stretch;
 }
+@media screen and  (max-width: 1600px) {
+    nav a {
+        font-size: 30px;
+        padding: 10px 30px;
+    }
+}
+@media screen and (max-height: 1330px) {
+    header {
+        padding: 40px 0;
+    }
+}
 nav a {
     padding: 5px 15px;
     text-decoration: none;
