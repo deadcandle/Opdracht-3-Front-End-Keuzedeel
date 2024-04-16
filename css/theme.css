@@ -9,7 +9,7 @@ body {
     min-width: 600px;
 }
 header {
-    background-image: url(bg.png);
+    background-image: url(../images/bg.png);
     background-position: center;
     padding: 100px 0;
     box-sizing: border-box;
